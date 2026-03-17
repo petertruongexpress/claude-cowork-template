@@ -1,30 +1,46 @@
 # My Rules
 
-These are non-negotiable rules for every interaction. Follow them always.
+Non-negotiable rules for every interaction.
 
-## Core Workflow Rules (Always)
+## Workflow
 
-1. **Read my context files first.** Before every task, read the files in my ABOUT ME folder to understand who I am, how I write, and how I work. Don't produce generic output.
-2. **Ask clarifying questions before executing.** If my request is ambiguous or could go multiple directions, ask before you build. Don't assume.
-3. **Show a plan before acting.** For anything non-trivial, outline what you're going to do and get my approval before you start writing code, documents, or making changes.
-4. **Never delete without my approval.** Don't remove files, overwrite existing work, or make destructive changes unless I explicitly confirm.
-5. **Get approval before major changes.** If the plan changes mid-task or you discover something that shifts the approach, stop and check with me.
+1. **Read my context files first.** Read the ABOUT ME folder before every task. Don't produce generic output.
+2. **Ask before assuming.** If my request is ambiguous, ask before you build.
+3. **Plan before acting.** For anything non-trivial, outline the approach and get my approval before writing code or making changes. If the plan shifts mid-task, stop and check with me.
+4. **Never delete or overwrite without approval.** No destructive changes unless I explicitly confirm.
+5. **Stay in scope.** Only do what was asked. If you see something worth fixing, flag it — don't just do it.
 
-## Code Rules
+## Code Quality
 
-6. **Always include clear inline comments.** Every function, complex block, and non-obvious decision should have a comment explaining the "why." Don't leave code uncommented.
-7. **Never use placeholder or dummy data.** Use realistic examples, real-world data structures, and meaningful variable names. No `foo`, `bar`, `lorem ipsum`, or `test123`.
-8. **Follow my tech stack conventions.** Default to TypeScript, React, and Node.js patterns. Use functional components, hooks, and modern ES6+ syntax. No class components unless I ask.
-9. **Write production-quality code.** Include error handling, input validation, and edge case coverage. Don't write "happy path only" code.
+6. **No brittle code.** Handle edge cases, unexpected inputs, and failure states. Include error handling, input validation, and fallback behavior. No happy-path-only implementations.
+7. **No coupled code.** Every module, function, and component works independently with its own inputs, outputs, and responsibilities. No shared internal state. If changing one thing breaks something unrelated, the architecture is wrong. If you can't deploy or test a module alone, refactor it.
+8. **Don't break existing functionality.** Verify that changed components and their neighbors still work. Treat regressions as blockers — fix them before progressing.
+9. **Production quality from the start.** Meaningful variable names, proper typing, realistic data structures. No `foo`, `bar`, placeholders, or dummy implementations.
+10. **Match existing patterns.** Read surrounding code and follow established conventions — naming, file structure, error handling, logging. Consistency beats "better" in isolation. Don't introduce new dependencies without approval.
 
-## Output Rules
+## Architecture
 
-10. **Save finished files to the OUTPUTS folder.** When you produce a deliverable (doc, code file, report), save it to my OUTPUTS folder so I can find it.
-11. **Use my voice.** Read my-voice.md and match my tone and style in all written output. If you're unsure, err on the side of professional and direct.
-12. **Structure for scannability.** Use headings, short paragraphs, and logical grouping. Nobody reads walls of text.
+11. **Follow the stack.** React.js frontend, API Gateway + Lambda/Node.js backend, DynamoDB (Aurora MySQL for relational). AWS managed services and serverless by default. Functional components, hooks, ES6+.
+12. **Server validates everything.** Never trust client-side data. Validate, sanitize, and verify permissions server-side. Confirm user ownership of resources. Keep secrets in environment variables / AWS Secrets Manager only.
+13. **Audit trails on meaningful operations.** User changes, permission changes, errors, and state transitions generate logs. Generic error messages for users; detailed logs for developers.
+14. **Comments explain why, not what.** JSDoc for public functions. `TODO`/`FIXME`/`DEPRECATED` tags with Jira ticket references for temporary code.
 
-## Communication Rules
+## Testing & Verification
 
-13. **Be direct.** Don't pad responses with unnecessary context or caveats. If I ask a question, lead with the answer.
-14. **Flag risks and tradeoffs proactively.** If a decision has downsides I should know about, tell me upfront. Don't wait for me to ask.
-15. **Don't repeat yourself.** If you've already explained something in this session, reference it — don't re-explain from scratch.
+15. **Complexity scales with testing.** The bigger the change, the more time goes to verification. Spend 30–40% of effort on code health — inspections, refactoring, test coverage.
+16. **Fix bugs before progressing.** Don't accumulate known bugs. If things go wrong, rollback to a git checkpoint rather than digging deeper into a broken state.
+17. **When stuck, stop and ask.** If 2–3 approaches haven't worked, explain what you tried and ask for direction. Don't loop on failing patterns.
+
+## AI-Assisted Development
+
+18. **Ask AI to improve its own work.** After generating code, ask it to review itself — identify weaknesses, find failure modes, improve structure, and increase test coverage.
+19. **Break complex work into small tasks.** Don't give one massive prompt. Break features into 3–5+ discrete requests. Small tasks produce better results and fit the context window.
+20. **Rollback, don't patch forward.** If AI-generated code goes wrong, return to the last good checkpoint and re-prompt. Patching over bad output compounds mistakes.
+21. **Manage context proactively.** Keep context small and focused. When chat gets large, start a new session with a clean summary. Mention only relevant files.
+22. **Leave it cleaner than you found it.** Boy Scout Rule — every task includes a small improvement to code health.
+
+## Output & Communication
+
+23. **Use my voice.** Read my-voice.md. Match my tone — professional, direct, specific. No filler.
+24. **Be direct.** Lead with the answer. Flag risks and tradeoffs proactively. Don't pad responses.
+25. **Save deliverables to the OUTPUTS folder.** Docs, code, reports — save where I can find them.
