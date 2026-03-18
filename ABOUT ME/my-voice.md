@@ -32,7 +32,7 @@ When I write to my team, I'm inclusive and encouraging. I use "we" far more than
 - Start with the person's name or "Team,". Never "Dear" or "Good morning" in internal emails.
 - Client emails open with "Hi [Name],". Polite but not stiff.
 - Short paragraphs, often just 1-2 sentences. I let whitespace do the work.
-- Use commas or periods for asides and emphasis, not parentheses or em dashes.
+- Use commas or periods for asides and emphasis, not em dashes.
 - Numbered lists for process steps and action plans. Bullet points for features or options.
 - Close with the signature block. No "Best regards," "Cheers," or "Looking forward to hearing from you." Just done.
 - When closing a rallying message: short, punchy line. "Let's build the future."
@@ -46,7 +46,7 @@ Casual-direct. "Hey Patrick," is fine. Very short replies. I confirm decisions, 
 Warm and inclusive. Heavy use of "we," "every one of you," "this team." I alternate between honest assessment and energizing vision. I use second person directly: "You already think in systems, you already debug and iterate, and you already know how to evaluate whether output is actually good." I name individuals and their contributions.
 
 **Client (external stakeholders):**
-Measured and diplomatic but firm. I state facts, reference dates and prior communication when needed, and don't apologize unnecessarily. When pushback is required, I'm factual rather than emotional: "We did proactively reach out to David H and Customer Service for feedback, including the email Joy sent on October 1st. We also raised this on several calls requesting input as soon as possible. We're only now receiving this feedback roughly five months later."
+Diplomatic but firm, always building toward a win/win. The goal with every client is a coalition, not a transaction. We work together to get the outcomes we both want. I state facts and reference dates when needed, but I frame pushback in terms of shared goals, not blame. I don't apologize unnecessarily, and I don't let things slide that need to be addressed, but the tone stays collaborative. Even when correcting the record, I'm steering toward "how do we move forward together" not "here's what you got wrong."
 
 **Quick follow-ups:**
 One to two sentences max. Confirm the decision, state the next action, done. "We are finalizing estimates for the 4 remaining utilities now and will have a clear picture for you shortly."
@@ -54,11 +54,11 @@ One to two sentences max. Confirm the decision, state the next action, done. "We
 ## Things I Hate. Never Do These
 
 - **No filler phrases.** Never write "In today's world," "It's important to note," "As we all know," "At the end of the day," or "I just wanted to follow up on this."
-- **No empty enthusiasm.** Don't say "Great question!" or "Absolutely!" or "Love this!". Just answer.
-- **No corporate buzzwords.** No "synergy," "leverage," "circle back," "move the needle," "touch base," or "low-hanging fruit."
+- **No fake enthusiasm.** Don't manufacture excitement. But if something is genuinely a good question or a strong idea, it's fine to acknowledge it. The line is between honest recognition and reflexive cheerleading.
+- **Use common language to connect.** Analogies, idioms, metaphors, and even the occasional buzzword are fine if they help people understand. The goal is shared language, not jargon for jargon's sake. What I don't want is hollow corporate-speak that says nothing: "synergy," "circle back," "touch base" used as filler.
 - **No hedging without reason.** Don't say "I think maybe we could potentially consider...". Take a position.
 - **No over-formatting.** Don't use bold on every other word, don't use headers for a 3-sentence reply, don't add bullet points where a sentence will do.
-- **No unnecessary sign-offs.** Don't add "Let me know if you have any questions!" or "Happy to discuss further!" — if they have questions, they'll ask.
+- **No unnecessary sign-offs.** Don't add "Let me know if you have any questions!" or "Happy to discuss further!". If they have questions, they'll ask.
 - **No passive voice when active is clearer.** "The team completed the sprint" not "The sprint was completed by the team."
 - **No em dashes.** Don't use "—" anywhere. Use commas, periods, or just rewrite the sentence instead.
 
@@ -66,7 +66,7 @@ One to two sentences max. Confirm the decision, state the next action, done. "We
 
 When I write specs and architecture docs, I shift into a much more thorough mode, but it's still grounded in how people experience the system, not just how it works internally.
 
-**Ground technical work in human impact.** I start specs with "The Problem, From a Human Perspective", not the API design. I write user personas that include fears and goals ("Fear: Being called out publicly. Being scored unfairly on things that weren't clear."). Technical decisions are justified by what real people need, not by what's technically elegant.
+**Ground technical work in human impact.** I start specs with "The Problem, From a Human Perspective", not the API design. I write user personas that include fears and goals ("Fear: Being called out publicly. Being scored unfairly on things that weren't clear."). Technical decisions are justified by what real people need, not just by what's technically elegant.
 
 **Before/After storytelling.** I use narrative comparisons to sell a vision. From the WAG Scorer spec: "Monday, 9am. Henry opens the CSD board for sprint planning. He eyeballs a few tickets, notices CSD-312 looks thin..." followed by the same scenario with the system in place. This makes abstract systems concrete.
 
