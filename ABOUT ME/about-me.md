@@ -45,21 +45,11 @@ I'm a software architect at Webapper Services, a web development and consulting 
 
 ## Our Product — CloudSee Drive
 
-Webapper's top product is [CloudSee Drive](https://www.cloudseedrive.com/), a SaaS platform that gives teams a user-friendly browser-based interface for Amazon S3 storage. It lets AWS administrators and end users browse, search, upload, download, and manage files across S3 buckets without needing the AWS Console or technical expertise. Key capabilities include sub-second search across millions of objects (Fast Buckets indexing), file versioning, RBAC permissions management, secure file sharing via time-limited links, activity monitoring and audit logs, and support for files up to 5TB. It's available through the AWS Marketplace with same-day onboarding. Revenue is currently low, but the strategic goal is for CloudSee Drive to replace client services revenue and become Webapper's primary business.
-
-**CloudSee Drive Tech Stack:**
-- **Frontend:** React, hosted on S3 + CloudFront CDN (repo: Bitbucket `csd-frontend`)
-- **Backend:** Node.js microservices deployed as AWS Lambda functions via SAM CLI / CloudFormation. Services include: User API, Storage API, Metric Service, Fast Bucket Service (indexing engine), Task Manager, and Zipper Task. Shared SDK (`@webapper/cloudsee-drive-sdk`) on NPM handles DB connections, CORS, and auth. (repo: Bitbucket `csd-backend`)
-- **Database:** DynamoDB (tables prefixed by environment, e.g. `production_User`)
-- **Search:** OpenSearch (powers Fast Buckets indexing; AI-powered natural language + voice search in development)
-- **AWS Services:** S3, Lambda, API Gateway, CloudFront, DynamoDB, OpenSearch, SES (email), Systems Manager Parameter Store, CloudFormation
-- **Auth:** SSO-ready, Microsoft Entra ID integration for group management
-- **Environments:** Develop → QA → Production, all in us-east-1
-- **Primary devs:** Peter (Sr. Dev), Max (Jr/Mid Dev), Daniela (PM/SME)
+Webapper's flagship SaaS product. Browser-based interface for Amazon S3 storage, available on the AWS Marketplace. React frontend, Node.js serverless backend (Lambda/DynamoDB/OpenSearch). The strategic goal is for CloudSee Drive to replace client services revenue and become Webapper's primary business. See `PROJECTS/CloudSee Drive/project-context.md` for full architecture, team, active work, and deployment details.
 
 ## Client Project — VisionAST
 
-[VisionAST](https://www.visionast.com/) is Webapper's primary client project — a data analytics platform built for automotive and powersports dealerships. It helps dealers unlock profitability through real-time reporting on their DMS (dealership management system) data. The product suite includes SalesVision (variable ops reporting), PowerVision (powersports-specific), FinanceVision (F&I analytics), ServiceVision (service department metrics), and MenuVision (F&I video/reporting via iTapMenu partnership). It integrates with 12+ DMS systems, runs on AWS, and provides unified single sign-on access across multi-location dealer groups. Joy Miller is the SME and PM on this project, with Steven and Ann as the primary devs.
+Webapper's primary client project. Data analytics platform for automotive and powersports dealerships (SalesVision, PowerVision, FinanceVision, ServiceVision, MenuVision). Legacy CFML/Lucee on Aurora MySQL with a long-term modernization plan. Integrates with 12+ DMS systems. See `PROJECTS/VisionAST/project-context.md` for full architecture, team, active work, and deployment details.
 
 ## AWS Hosting Customers
 

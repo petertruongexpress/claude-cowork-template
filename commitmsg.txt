@@ -1,9 +1,7 @@
-Update project contexts with Last Updated dates, release cadence, and missed sources
+Trim CloudSee Drive and VisionAST sections in about-me.md
 
-- Added Last Updated date to both CloudSee Drive and VisionAST project contexts
-- Added Release Cadence / How Code Gets to Production section to CloudSee Drive
-- Added permissions model detail to CloudSee Drive auth description
-- Added missing Confluence links: Sprint History, credentials pages, access info
-- Added Permissions Spec Google Doc link
+- Replaced detailed tech stack and product descriptions with brief summaries
+- Added pointers to PROJECTS/*/project-context.md for full details
+- Eliminates duplication between about-me.md and project context files
 
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
