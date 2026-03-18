@@ -1,0 +1,7 @@
+Add VisionAST project context with full project data
+
+- Created PROJECTS/VisionAST/project-context.md
+- Populated from Jira epics, Confluence wiki pages, Google Drive business case, and Gmail
+- Covers legacy architecture, DMS integrations, active work, modernization vision
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
