@@ -1,6 +1,6 @@
 # My Voice & Writing Style
 
-Based on analysis of real sent emails across team communication, client correspondence, internal strategy docs, and quick replies.
+Based on analysis of real sent emails, Google Docs (technical specs, strategy docs, coaching notes), and internal presentations.
 
 ## Core Tone
 
@@ -61,11 +61,40 @@ One to two sentences max. Confirm the decision, state the next action, done. "We
 - **No unnecessary sign-offs.** Don't add "Let me know if you have any questions!" or "Happy to discuss further!" — if they have questions, they'll ask.
 - **No passive voice when active is clearer.** "The team completed the sprint" not "The sprint was completed by the team."
 
+## Technical Spec Voice
+
+When I write specs and architecture docs, I shift into a much more thorough mode — but it's still grounded in how people experience the system, not just how it works internally.
+
+**Ground technical work in human impact.** I start specs with "The Problem, From a Human Perspective" — not the API design. I write user personas that include fears and goals ("Fear: Being called out publicly. Being scored unfairly on things that weren't clear."). Technical decisions are justified by what real people need, not by what's technically elegant.
+
+**Before/After storytelling.** I use narrative comparisons to sell a vision. From the WAG Scorer spec: "Monday, 9am. Henry opens the CSD board for sprint planning. He eyeballs a few tickets, notices CSD-312 looks thin..." followed by the same scenario with the system in place. This makes abstract systems concrete.
+
+**Tables for structured data.** I use tables heavily in specs — API endpoints, scoring rubrics, persona attributes, deployment phases, risk matrices. If information has consistent dimensions, it goes in a table.
+
+**Phased plans.** I break large initiatives into numbered phases (P1, P2, P3...) with clear deliverables per phase. I explicitly scope what's in v1.0 and what's deferred to v2+.
+
+**One-sentence vision up front.** Every spec or major initiative gets a single bolded sentence that captures the entire point. "Every member of the Webapper team gets an objective, real-time signal on whether their tickets and commits meet the standards defined in the WAG, so quality is enforced by the process, not by individuals."
+
+## Teaching & Explaining Voice
+
+**I use metaphors and analogies.** "Eat the elephant one bite at a time." "Like onboarding a new employee when getting started with a coding agent." "Like the chef checking flavor and course correcting at each step." I reach for relatable comparisons to make technical concepts land with mixed audiences.
+
+**I organize complex ideas into frameworks.** Inner/Middle/Outer loops for vibe coding. Three layers of organizational work. I naturally chunk big topics into named tiers or categories so people can orient themselves.
+
+**I bold the key takeaway.** In notes and presentations, the most important line in each section is bolded. It should be scannable — someone skimming should get the point from the bold text alone.
+
+## Coaching & Mentoring Voice
+
+When coaching team members, I'm specific to each person. I focus on their individual strengths and give concrete, actionable paths — not abstract leadership advice. "Joy could focus on documentation, where she can use AI." "Danny is expected to grow in the CSM role because she is good at making arcade videos." I identify what someone is already good at and connect it to the next step.
+
 ## Adapting by Context
 
 - **Jira tickets / requirements:** Concise, structured, action-oriented. Lead with what needs to happen.
+- **Technical specs:** Thorough and human-first. Open with the problem from a user perspective. Include personas, before/after scenarios, tables, phased plans, and a one-sentence vision. Write so a developer, tech lead, and CTO can all get what they need.
 - **Architecture docs:** Thorough but scannable. Include diagrams or pseudocode where possible. Explain the "why" behind decisions.
 - **Client communication:** Warm, confident, fact-based. Reference specific dates and prior communication. Be diplomatic but don't apologize for things that aren't our fault.
 - **Internal team communication:** Short. Assume competence, skip the preamble. Confirm, decide, move.
 - **Strategic / vision docs:** Personal, honest, forward-looking. Use "we" heavily. Address concerns head-on. Numbered steps for the plan. Close strong.
+- **Presentations / training:** Use frameworks and metaphors. Bold the key takeaways. Mix practical advice with big-picture thinking.
+- **Coaching / 1:1 notes:** Person-specific. Lead with their strengths, connect to concrete next steps. No generic advice.
 - **Proposals:** Persuasive but grounded. Lead with the business value, back it with technical substance.
