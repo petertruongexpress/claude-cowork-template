@@ -1,5 +1,7 @@
 # Project Context: [Project Name]
 
+**Last Updated:** YYYY-MM-DD
+
 ## Overview
 
 One paragraph describing what this project is, who it's for, and why it matters.
@@ -48,6 +50,16 @@ Brief description of the major system components and how they interact.
 
 ## Known Tech Debt
 - Items the team is aware of but hasn't addressed yet
+
+## Release Cadence / How Code Gets to Production
+
+Describe the full lifecycle of a change from idea to production. Reference the WAG (Webapper Agile Guide) for the standard process, and note any project-specific deviations here.
+
+- **Sprint Length:**
+- **Ticket Workflow:** New > Discovery > Confirmed > In Progress > Ready to Test > Testing Complete > Ready for Production Testing > Done!
+- **Deployment Process:** How code moves from dev to QA to production
+- **Who Deploys:** Who has deploy access and who approves production releases
+- **Release Strategy:** Feature flags, phased rollouts, big-bang, etc.
 
 ## Project Conventions
 - Coding patterns, naming conventions, or workflow rules specific to this project

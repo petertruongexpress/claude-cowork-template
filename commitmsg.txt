@@ -1,7 +1,7 @@
-Add VisionAST project context with full project data
+Add WAG process overview and update project template
 
-- Created PROJECTS/VisionAST/project-context.md
-- Populated from Jira epics, Confluence wiki pages, Google Drive business case, and Gmail
-- Covers legacy architecture, DMS integrations, active work, modernization vision
+- Created ABOUT ME/our-process.md with full WAG v3.0 process summary
+- Added Last Updated date field to project-context.md template
+- Added Release Cadence / How Code Gets to Production section to template
 
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
