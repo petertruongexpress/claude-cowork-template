@@ -1,5 +1,7 @@
 # Jira Ticket Template
 
+**Last Updated:** 2026-03-18
+
 ## Title
 [Concise, action-oriented title, e.g., "Implement token refresh with sliding window expiry"]
 

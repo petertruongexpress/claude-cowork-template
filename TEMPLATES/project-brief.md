@@ -1,5 +1,7 @@
 # Project Brief Template
 
+**Last Updated:** 2026-03-18
+
 ## Project Name
 [Project name]
 

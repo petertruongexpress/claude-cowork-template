@@ -1,5 +1,7 @@
 # My Voice & Writing Style
 
+**Last Updated:** 2026-03-18
+
 Based on analysis of real sent emails, Google Docs (technical specs, strategy docs, coaching notes), and internal presentations.
 
 ## Core Tone

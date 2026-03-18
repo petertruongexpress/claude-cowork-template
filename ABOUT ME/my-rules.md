@@ -1,5 +1,7 @@
 # My Rules
 
+**Last Updated:** 2026-03-18
+
 Non-negotiable rules for every interaction.
 
 ## Workflow
