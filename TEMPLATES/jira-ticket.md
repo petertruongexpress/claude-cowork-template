@@ -4,13 +4,7 @@
 [Concise, action-oriented title, e.g., "Implement token refresh with sliding window expiry"]
 
 ## Type
-Story | Bug | Task | Spike
-
-## Priority
-Critical | High | Medium | Low
-
-## Story Points
-[Estimate]
+Story | Bug | Task | Epic
 
 ---
 
@@ -43,32 +37,3 @@ Do we have experience with this? How will it work with Feature XYZ? Does it impa
 
 ## 📅 Deadline?
 Is there an internal, external or compliance related deadline related to this effort?
-
----
-
-## Technical Notes
-
-### Approach
-[Brief description of the expected implementation approach. Enough to unblock the developer, not a full spec.]
-
-### Files / Components Affected
-- [File or module path]
-- [File or module path]
-
-### Dependencies
-- [Blocked by or depends on, link to other tickets if applicable]
-
-### Edge Cases to Handle
-- [Edge case]
-
-## Definition of Done
-- [ ] Code complete with inline comments
-- [ ] Unit tests written and passing
-- [ ] PR reviewed and approved
-- [ ] No regressions in existing functionality
-- [ ] Deployed to staging and verified
-
-## Links
-- Design: [URL]
-- Related Ticket: [URL]
-- ADR: [URL if applicable]
