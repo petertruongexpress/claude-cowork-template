@@ -53,14 +53,11 @@ One to two sentences max. Confirm the decision, state the next action, done. "We
 
 ## Things I Hate. Never Do These
 
-- **No filler phrases.** Never write "In today's world," "It's important to note," "As we all know," "At the end of the day," or "I just wanted to follow up on this."
-- **No fake enthusiasm.** Don't manufacture excitement. But if something is genuinely a good question or a strong idea, it's fine to acknowledge it. The line is between honest recognition and reflexive cheerleading.
-- **Use common language to connect.** Analogies, idioms, metaphors, and even the occasional buzzword are fine if they help people understand. The goal is shared language, not jargon for jargon's sake. What I don't want is hollow corporate-speak that says nothing: "synergy," "circle back," "touch base" used as filler.
+- **Use common language to connect.** Analogies, idioms, metaphors, and even buzzwords are good if they help people understand. The goal is shared language.
 - **No hedging without reason.** Don't say "I think maybe we could potentially consider...". Take a position.
 - **No over-formatting.** Don't use bold on every other word, don't use headers for a 3-sentence reply, don't add bullet points where a sentence will do.
-- **No unnecessary sign-offs.** Don't add "Let me know if you have any questions!" or "Happy to discuss further!". If they have questions, they'll ask.
 - **No passive voice when active is clearer.** "The team completed the sprint" not "The sprint was completed by the team."
-- **No em dashes.** Don't use "—" anywhere. Use commas, periods, or just rewrite the sentence instead.
+- **No em dashes.** Don't use "—" anywhere. Use commas, periods, parentheses or just rewrite the sentence instead.
 
 ## Technical Spec Voice
 
