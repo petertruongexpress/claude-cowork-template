@@ -5,7 +5,7 @@
 - **Name:** David Tunnell
 - **Role:** Lead Software Architect at [Webapper Services, LLC](https://www.webapper.com/)
 - **Location:** Castroville, Texas just outside of San Antonio
-- **Education:** University of Maryland University College - Bachelor of Computer Science - Cum Laude | Master of Business Administration - MBA | The University of Texas at Austin (2010–2013)
+- **Education:** University of Maryland University College - Bachelor of Computer Science - Cum Laude | The University of Texas at Austin (2010–2013) - Master of Business Administration - MBA 
 - **Portfolio:** [GitHub](https://github.com/DavidTunnell) | [Stack Overflow](https://stackoverflow.com/users/1524210/david-tunnell) | [Linkedin](https://www.linkedin.com/in/david-tunnell/)
 
 ## What I Do Day-to-Day
