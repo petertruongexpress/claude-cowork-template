@@ -1,5 +1,7 @@
 # Project Context: VisionAST
 
+**Last Updated:** 2026-03-18
+
 ## Overview
 
 [VisionAST](https://www.visionast.com/) is Webapper's primary client project, a data analytics platform built for automotive and powersports dealerships. It helps dealers unlock profitability through real-time reporting on their DMS (dealership management system) data. The product suite includes SalesVision (variable ops reporting), PowerVision (powersports-specific), FinanceVision (F&I analytics), ServiceVision (service department metrics), and MenuVision (F&I video/reporting via iTapMenu partnership). It integrates with 12+ DMS systems, runs on AWS, and provides unified single sign-on access across multi-location dealer groups. VisionAST is Webapper's longest-running client relationship.

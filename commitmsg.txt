@@ -1,7 +1,9 @@
-Add WAG process overview and update project template
+Update project contexts with Last Updated dates, release cadence, and missed sources
 
-- Created ABOUT ME/our-process.md with full WAG v3.0 process summary
-- Added Last Updated date field to project-context.md template
-- Added Release Cadence / How Code Gets to Production section to template
+- Added Last Updated date to both CloudSee Drive and VisionAST project contexts
+- Added Release Cadence / How Code Gets to Production section to CloudSee Drive
+- Added permissions model detail to CloudSee Drive auth description
+- Added missing Confluence links: Sprint History, credentials pages, access info
+- Added Permissions Spec Google Doc link
 
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>

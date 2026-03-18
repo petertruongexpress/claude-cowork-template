@@ -1,5 +1,7 @@
 # Project Context: CloudSee Drive
 
+**Last Updated:** 2026-03-18
+
 ## Overview
 
 [CloudSee Drive](https://www.cloudseedrive.com/) is Webapper's flagship SaaS product. It gives teams a browser-based interface for Amazon S3 storage, replacing the need for the AWS Console or technical expertise. Users can browse, search, upload, download, and manage files across S3 buckets with features like sub-second search across millions of objects (powered by Fast Buckets indexing), file versioning, RBAC permissions, secure file sharing, activity monitoring, and support for files up to 5TB. It's available through the AWS Marketplace with same-day onboarding. The strategic goal is for CloudSee Drive to replace client services revenue and become Webapper's primary business.
@@ -33,7 +35,7 @@
 - **Database:** DynamoDB (tables prefixed by environment, e.g. `production_User`)
 - **Search:** OpenSearch (powers Fast Buckets indexing engine, natural language + voice search)
 - **Shared SDK:** `@webapper/cloudsee-drive-sdk` on NPM (handles DB connections, CORS, auth)
-- **Auth:** SSO-ready, Microsoft Entra ID integration for group management
+- **Auth:** SSO-ready, Microsoft Entra ID integration for group management. Three user types: Regular User, Admin, and Owner Admin (one per account). Owner Admin is the only user who can add other Admins and change company info. When adding users, the Admin selects which AWS accounts and Collections (buckets) they can access.
 - **CI/CD:** Jenkins (pipeline performance recently optimized with EFS mount)
 
 ### Backend Microservices
@@ -107,6 +109,16 @@ Browse, search, and filter S3 objects by tags within CloudSee Drive. Tree view o
 - Infrastructure as Code standardization
 - Observability and monitoring (centralized logging, alerting)
 
+## Release Cadence / How Code Gets to Production
+
+- **Sprint Length:** 2 weeks (synchronized across all Webapper projects, per WAG)
+- **Sprint Planning:** Weekly meetings, Tuesdays 2:30 PM CDT
+- **Ticket Workflow:** New > Discovery > Confirmed > In Progress > Ready to Test > Testing Complete > Ready to Deploy > Ready for Production Testing > Done!
+- **Deployment Process:** Code moves develop > qa > production. Each backend service (User API, Storage API, etc.) is deployed independently via SAM CLI scripts (bat for Windows, sh for Linux). Frontend deployed to S3 + CloudFront invalidation.
+- **Who Deploys:** Developers deploy to QA. Production deploys require review. Daniela handles QA testing, then dev verifies on production, then Daniela/client performs UAT.
+- **Release Strategy:** Feature-per-month cadence. Epics ship as complete units. No feature flags currently. Public roadmap at cloudseedrive.com shows Launched/In Progress/Planned.
+- **Roadmap Prioritization:** Productboard with ICE scoring. Patrick pushes features from Productboard candidates into Jira Discovery sprint for estimation.
+
 ## Project Conventions
 
 - **Ticket Format:** WAG-style Jira tickets with emoji section headers (see TEMPLATES/jira-ticket.md)
@@ -128,5 +140,11 @@ Browse, search, and filter S3 objects by tags within CloudSee Drive. Tree view o
 - **Product Site:** https://www.cloudseedrive.com/
 - **AWS Marketplace:** Available via AWS Marketplace (free trial + paid plans)
 - **Application:** https://app.cloudsee.cloud/
+- **Confluence - Sprint History:** https://webapper.atlassian.net/wiki/spaces/CD1/pages/171933697/Sprint+History
+- **Confluence - User Credentials:** https://webapper.atlassian.net/wiki/spaces/CD1/pages/26443788/User+Credentials
+- **Confluence - Production Credentials:** https://webapper.atlassian.net/wiki/spaces/CD1/pages/26443778/Production+Credentials
+- **Confluence - Dev Credentials:** https://webapper.atlassian.net/wiki/spaces/CD1/pages/26804240/Development+Credentials
+- **Confluence - Access Information:** https://webapper.atlassian.net/wiki/spaces/CD1/pages/26509319/CloudSee+Drive+Access+Information
+- **Google Doc - Permissions Spec:** https://docs.google.com/document/d/1W6u5Zyg8cIp-0HhZZ1-Wy7sbqZMjR8ru2XtJFymaUFE
 - **Frontend Repo:** Bitbucket `csd-frontend`
 - **Backend Repo:** Bitbucket `csd-backend`
