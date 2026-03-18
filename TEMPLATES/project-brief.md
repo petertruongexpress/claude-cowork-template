@@ -23,7 +23,18 @@
 - **Third-Party Services:** [e.g., Stripe, Auth0, SendGrid]
 
 ### Key Architecture Decisions
-[List any significant decisions already made and why.]
+
+For each major technical decision, document what was chosen and why.
+
+#### [Decision Title]
+**Decision:** [What we chose and why in 1-2 sentences]
+
+| Option | Pros | Cons | Effort |
+|--------|------|------|--------|
+| [Option A] | | | Low / Med / High |
+| [Option B] | | | Low / Med / High |
+
+**Tradeoffs:** [What we give up with this choice]
 
 ## Requirements
 
