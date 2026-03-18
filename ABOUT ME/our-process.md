@@ -1,7 +1,7 @@
 # Webapper Agile Guide (WAG) - Process Overview
 
 **Last Updated:** 2026-03-18
-**Source:** WAG v3.0 (March 4, 2024)
+**Source:** WAG v4.0 (January 23, 2025)
 
 ## What This Is
 
@@ -21,10 +21,10 @@ High quality software comes from strong process and clarity. Clarity requires ef
 
 - **Daily Standup (USTeam):** Tuesday through Thursday weekly. Each person answers: What did I do yesterday? What will I do today? Any blockers?
 - **Daily Standup (VTeam):** Internal daily scrum during Vietnam business hours
-- **Sprint Touchpoint (VTeam + USTeam):** Once per sprint (every 2 weeks)
+- **Sprint Touchpoint (VTeam + USTeam):** Once per month after the All-Hands meeting
 - **Sprint Planning & Backlog Refinement:** USTeam has weekly meetings per project. Only scrum masters add/remove tickets from sprints.
 - **Sprint Review / Demo:** Once per sprint with all available stakeholders including the customer. Can be replaced with a written summary or email report.
-- **Retrospective:** Once per month during one of the bi-weekly VTeam-USTeam meetings. Everyone should speak openly and honestly about what went well and what didn't.
+- **Retrospective:** Once per quarter (text-based), during one of the monthly VTeam-USTeam meetings. Everyone should speak openly and honestly about what went well and what didn't.
 
 ## Ticket Workflow (Standard Statuses)
 
@@ -41,9 +41,9 @@ Additional statuses: Waiting on Customer (blocked on external party), On Hold (p
 
 ## Plan Levels (Ticket Hierarchy)
 
-- **Epic** - Large-scale objective spanning multiple sprints. Should consist of multiple stories. Should not remain open indefinitely. More than 40 hours of discovery alone suggests an epic.
-- **Story** - Medium scale, under an epic. Details specific functionality focusing on user value. Should contain subtasks or a checklist if complex.
-- **Task** - Smallest unit. Specific, well-defined, achievable in a short timeframe. Should typically take 8 hours or less.
+- **Epic** - Large-scale objective spanning multiple sprints. Should consist of multiple Issues (Story, Task, Bug). Should not remain open indefinitely. More than 40 hours of discovery alone suggests an epic.
+- **Issue (Story, Task, Bug)** - Medium scale, under an epic. Stories detail specific functionality focusing on user value. Should contain Sub-tasks or a checklist if complex.
+- **Sub-task** - Smallest unit. Specific, well-defined, achievable in a short timeframe. Should typically take 8 hours or less.
 
 ## Estimation
 
@@ -83,7 +83,7 @@ Additional statuses: Waiting on Customer (blocked on external party), On Hold (p
 - **Comments:** Always add comments as you work, even incremental updates
 - **Scope Creep:** If scope is added to an in-progress estimated ticket, new work goes in a new ticket
 - **Time Tracking:** Keep Total Time Worked up-to-date. Hours must match Harvest.
-- **Git Commits:** Use format `re #123 - this is my commit message` to link commits to tickets
+- **Git Commits:** Use format `CSD-123 - Your commit message here` (Jira project key prefix) to link commits to tickets
 - **Bug Format:** Developer output must include Root Cause and Solution
 - **Tags:** Tag tickets with helpful meta information (Bug, Bad Data, Next Sprint, etc.)
 - **Followers:** Add followers and use @mentions for notifications
@@ -95,11 +95,29 @@ Additional statuses: Waiting on Customer (blocked on external party), On Hold (p
 - **Recency:** Tickets as up-to-date as possible
 - **Formula:** High Velocity + High Quality = Great Customer Experience
 
+## Sprint Transition Process (Project Manager Task)
+
+1. Screenshot the project in the "Webapper Sprint Planning - SumUp" dashboard
+2. Paste screenshot at the top of the "Completed Sprints" page in the appropriate Confluence space
+3. Navigate to the current sprint in Backlog view
+4. Move any incomplete tickets to the next sprint by changing the Sprint field
+5. Click "Complete sprint"
+6. Click "Start sprint" for the new sprint
+
+## Confluence (Wiki)
+
+- Central shared repository of information describing customers and their systems
+- Avoid duplicate information across pages, use page hierarchy for clarity
+- Use formatting and link to external tools (Google Docs, Sheets, Miro) when needed
+- **Never store access credentials in Confluence**
+
 ## Tools
 
-- **Project Management:** Jira (migrated from Assembla). Ticket rules and workflow remain the same.
+- **Project Management:** Jira (migrated from Assembla)
+- **Wiki/Documentation:** Confluence
 - **Roadmap/Prioritization:** Productboard (ICE scoring for CloudSee Drive)
-- **Time Tracking:** Harvest
+- **Time Tracking:** Harvest (future Jira-Harvest integration planned)
 - **Standups:** What's Up @ Webapper Miro board
-- **Sprints:** Google Sheets Sprint Planning Spreadsheet
+- **Sprints:** Google Sheets Sprint Planning Spreadsheet (future: built-in Jira reports/add-ons)
 - **Process Visualization:** Miro board
+- **Ticket Reports:** Monday Ticket Review, My Open Tickets, Stale Tickets dashboards in Jira
