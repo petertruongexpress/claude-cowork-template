@@ -1,6 +1,6 @@
 # Webapper Agile Guide (WAG) - Process Overview
 
-**Last Updated:** 2026-03-18
+**Last Updated:** 2026-04-01
 **Source:** WAG v4.0 (January 23, 2025)
 
 ## What This Is
@@ -198,9 +198,9 @@ Use MCP connectors when available (faster, structured data). Fall back to Chrome
 
 Repos are hosted at [bitbucket.org/cloudsee-drive](https://bitbucket.org/cloudsee-drive/workspace/repositories). No MCP available. Use Desktop Commander (Windows CMD) for git and Bitbucket REST API operations.
 
-**Local repos** are cloned to `C:\Users\david\dev\`. To read code, check history, or make changes:
+**Local repos** are cloned to `D:\Project\Webapper`. To read code, check history, or make changes:
 ```cmd
-cd C:\Users\david\dev\{repo-name}
+cd D:\Project\Webapper\{repo-name}
 git log --oneline -20
 git diff
 git pull
@@ -209,13 +209,13 @@ git status
 
 **To clone a repo not yet local:**
 ```cmd
-cd C:\Users\david\dev
+cd D:\Project\Webapper
 git clone git@bitbucket.org:cloudsee-drive/{repo-name}.git
 ```
 
 **Bitbucket REST API** (for PRs, branches, repo info without cloning):
 ```cmd
-curl -u david@webapper.com https://api.bitbucket.org/2.0/repositories/cloudsee-drive
-curl -u david@webapper.com https://api.bitbucket.org/2.0/repositories/cloudsee-drive/{repo-name}/pullrequests
+curl -u peter@webapper.net https://api.bitbucket.org/2.0/repositories/cloudsee-drive
+curl -u peter@webapper.net https://api.bitbucket.org/2.0/repositories/cloudsee-drive/{repo-name}/pullrequests
 ```
 Note: API calls require authentication. If app passwords are configured, Desktop Commander can use them. Otherwise, use Chrome to browse PRs and pipelines.
