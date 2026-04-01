@@ -34,12 +34,12 @@ I'm a Senior Software Engineer on the Vietnam team at Webapper Services, a web d
 - **Scott Herring** — COO / Marketing / Sales / SEO (scott@webapper.com)
 - **Joy Miller** — Technical PM, Scrum Master, Manual Tester, SME of VisionAST (joy@webapper.net)
 - **Daniela Camargo** — PM, Scrum Master, Manual Tester, SME of CloudSee (daniela@webapper.net)
-- **David Tunnell (me)** — Lead Software Architect (david@webapper.com)
+- **David Tunnell** — Lead Software Architect (david@webapper.com)
 
 **Vietnam Team (VTeam):**
 - **Steven** — Tech Lead, all projects
 - **Ann** — Sr. Dev, VisionAST
-- **Peter** — Sr. Dev, CloudSee Drive (also helps with VisionAST onboardings)
+- **Peter (me)** — Sr. Dev, CloudSee Drive (also helps with VisionAST onboardings)
 - **Kevin** — Sr. Dev, transitioning from EDS contract into AI initiative
 - **Henry** — SDET, Documentation, Selenium, Unit Tests, DevOps
 - **Max** — Jr/Mid Dev, CloudSee Drive
